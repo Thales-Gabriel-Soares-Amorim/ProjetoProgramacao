@@ -1,0 +1,81 @@
+CAPITULO
+TITULO
+capitulo 1
+TEXTO
+em umas de ssuas caminhadas na floresta de noite encontra um ser monsstruoso e ela o segue, agora deve cansar a criatura para se salvar, ela se aproxima vai descer a colina ou segue reto
+PERSONAGEM
+criatura
+VARIAÇÃO DE ENERGIA
+0
+
+CAPITULO
+TITULO
+capitulo 2
+TEXTO
+ao descer pela colina a criatura tem dificuldade para se segurar na colina ingrime e obtem distancia, agora dois caminhos na sua frente, um cheio arvores tombadas e o outro limpo
+PERSONAGEM
+criatura
+VARIAÇÃO DE ENERGIA
+-40
+
+CAPITULO
+TITULO
+capitulo 3
+TEXTO
+seguindo pelo caminho de arvorestombadas a criatura fica para tras por conta dos epaços pequenos que apenas humanos conseguem passar.
+PERSONAGEM
+criatura
+VARIAÇÃO DE ENERGIA
+-60
+
+CAPITULO
+TITULO
+capitulo 4
+TEXTO
+você errou. issou lhe custou sua vida. GAME OVER!
+PERSONAGEM
+narrador
+VARIAÇÃO DE ENERGIA
+-100
+
+CAPITULO
+TITULO
+capitulo 5
+TEXTO
+você falhou. GAME OVER!
+PERSONAGEM
+narrador
+VARIAÇÃO DE ENERGIA
+-100
+
+ESCOLHA
+CAPITULO DE ORIGEM
+capitulo 1
+TEXTO
+colina
+CAPITULO DE DESTINO
+capitulo 2
+
+ESCOLHA
+CAPITULO DE ORIGEM
+capitulo 1
+TEXTO
+reto
+CAPITULO DE DESTINO
+capitulo 4
+
+ESCOLHA
+CAPITULO DE ORIGEM
+capitulo 2
+TEXTO
+limpo
+CAPITULO DE DESTINO
+capitulo 5
+
+ESCOLHA
+CAPITULO DE ORIGEM
+capitulo 2
+TEXTO
+arvores
+CAPITULO DE DESTINO
+capitulo 3
