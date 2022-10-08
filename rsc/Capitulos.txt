@@ -1,4 +1,23 @@
-CAPITULO
+CAPITULO_COM_IMAGEM
+IMAGEM:
+              * *    
+           *    *  *
+      *  *    *     *  *
+     *     *    *  *    *
+ * *   *    *    *    *   *
+ *     *  *    * * .#  *   *
+ *   *     * #.  .# *   *
+  *     "#.  #: #" * *    *
+ *   * * "#. ##"       *
+   *       "###
+             "##
+              ##.
+              .##:
+              :###
+              ;###
+            ,####.
+/\/\/\/\/\/.######.\/\/\/\/\
+FIM_DA_IMAGEM.
 TITULO
 capitulo 1
 TEXTO
@@ -18,11 +37,28 @@ criatura
 VARIAÇÃO DE ENERGIA
 -40
 
-CAPITULO
+CAPITULO_COM_IMAGEM
+IMAGEM:
+         ___---___                    
+      .--         --.      
+    ./   ()      .-. \.
+   /   o    .   (   )  \
+  / .            '-'    \         
+ | ()    .  O         .  |      
+|                         |      
+|    o           ()       |
+|       .--.          O   |            
+ | .   |    |            |
+  \    `.__.'    o   .  /    
+   \                   /                   
+    `\  o    ()      /' JT/jgs         
+      `--___   ___--'
+            ---
+FIM_DA_IMAGEM.
 TITULO
 capitulo 3
 TEXTO
-seguindo pelo caminho de arvorestombadas a criatura fica para tras por conta dos epaços pequenos que apenas humanos conseguem passar.
+seguindo pelo caminho de arvorestombadas a criatura fica para tras por conta dos epaços pequenos que apenas humanos conseguem passar. A lua paira de forma Imponente.
 PERSONAGEM
 criatura
 VARIAÇÃO DE ENERGIA

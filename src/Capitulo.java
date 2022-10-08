@@ -2,13 +2,17 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
+//construtor
 public class Capitulo {
     private String titulo;
     private String texto;
-    private ArrayList<Escolha> escolhas;
+    protected ArrayList<Escolha> escolhas;
     private Personagem perso;
     private int alterarEnergia;
     private Scanner escaneador;
+
+    //capitulo é capaz de ler a si mesmo
+    protected Capitulo() {}
 
     public Capitulo(String nome,
             String texto,
@@ -59,22 +63,22 @@ public class Capitulo {
         return idEscolha;
     }
 
-    private void ler(HashMap<String, Personagem> personagens, Scanner escaneadorConsole,
+    protected void ler(HashMap<String, Personagem> personagens, Scanner escaneadorConsole,
             Scanner escaneadorArquivoCapitulos) {
         String linhaEscaneada;
 
         this.escaneador = escaneadorConsole;
 
-        linhaEscaneada = escaneadorArquivoCapitulos.nextLine(); // TITULO
+        linhaEscaneada = escaneadorArquivoCapitulos.nextLine(); // Titulo
         this.titulo = escaneadorArquivoCapitulos.nextLine();
 
-        linhaEscaneada = escaneadorArquivoCapitulos.nextLine(); // TEXTO
+        linhaEscaneada = escaneadorArquivoCapitulos.nextLine(); // Texto
         this.texto = escaneadorArquivoCapitulos.nextLine();
 
-        linhaEscaneada = escaneadorArquivoCapitulos.nextLine(); // PERSONAGEM
+        linhaEscaneada = escaneadorArquivoCapitulos.nextLine(); // Personagem
         this.perso = personagens.get(escaneadorArquivoCapitulos.nextLine());
 
-        linhaEscaneada = escaneadorArquivoCapitulos.nextLine(); // VARIAÇÃO DE ENERGIA
+        linhaEscaneada = escaneadorArquivoCapitulos.nextLine(); // Variação de Energia
         this.alterarEnergia = Integer.parseInt(escaneadorArquivoCapitulos.nextLine());
     }
 

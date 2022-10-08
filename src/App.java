@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class App {
+        
         public static void main(String[] args) {
                 Scanner escaneador = new Scanner(System.in);
                 LeitorCarregador leitor = new LeitorCarregador();

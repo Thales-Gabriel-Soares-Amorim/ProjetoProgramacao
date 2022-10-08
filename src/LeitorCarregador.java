@@ -3,6 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Scanner;
 
+//leitor de arquivo de conteúdo
 public class LeitorCarregador {
 
     public HashMap<String, Personagem> lerPersonagens(String caminhoArquivoPersonagens) {
@@ -22,9 +23,9 @@ public class LeitorCarregador {
                 while (!linhaEscaneada.equals("PERSONAGEM")) {
                     linhaEscaneada = escaneadorArquivoPersonagens.nextLine();
                 }
-                linhaEscaneada = escaneadorArquivoPersonagens.nextLine(); // NOME
+                linhaEscaneada = escaneadorArquivoPersonagens.nextLine(); // Nome
                 nomePersonagem = escaneadorArquivoPersonagens.nextLine();
-                linhaEscaneada = escaneadorArquivoPersonagens.nextLine(); // ENERGIA
+                linhaEscaneada = escaneadorArquivoPersonagens.nextLine(); // Energia
                 energiaPersonagem = Integer.parseInt(escaneadorArquivoPersonagens.nextLine());
                 personagens.put(nomePersonagem, new Personagem(nomePersonagem, energiaPersonagem));
             }
@@ -53,11 +54,21 @@ public class LeitorCarregador {
 
             while (escaneadorArquivoCapitulos.hasNextLine()) {
 
-                while (!linhaEscaneada.equals("CAPITULO") &&
+                while (!linhaEscaneada.equals("CAPITULO_COM_IMAGEM") &&
+                        !linhaEscaneada.equals("CAPITULO") &&
                         !linhaEscaneada.equals("ESCOLHA")) {
 
                     linhaEscaneada = escaneadorArquivoCapitulos.nextLine();
                 }
+                if (linhaEscaneada.equals("CAPITULO_COM_IMAGEM")) {
+
+                    CapituloImagem capitulo = new CapituloImagem(personagens, escaneadorConsole, escaneadorArquivoCapitulos);
+
+                    capitulos.put(capitulo.getTitulo(), capitulo);
+
+                    linhaEscaneada = "";
+                }
+
                 if (linhaEscaneada.equals("CAPITULO")) {
 
                     Capitulo capitulo = new Capitulo(personagens, escaneadorConsole, escaneadorArquivoCapitulos);
